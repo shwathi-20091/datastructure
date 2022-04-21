@@ -31,7 +31,7 @@ public class Stack {
 	{
 		if (top < 0) {
 			System.out.println("Stack Underflow");
-			return 0;
+			return 0; 
 		}
 		else {
 			int x = a[top--];
