@@ -34,8 +34,8 @@ public class Stack {
 			return 0; 
 		}
 		else {
-			int x = a[top--];
-			return x;
+			return a[top--];
+			 
 		}
 	}
 
@@ -46,8 +46,8 @@ public class Stack {
 			return 0;
 		}
 		else {
-			int x = a[top];
-			return x;
+			return a[top];
+			
 		}
 	}
 	
@@ -59,18 +59,18 @@ public class Stack {
 
 
 
-	public static void main(String args[])
+	public static void main(String[] args)
 	{
 		Stack s = new Stack();
         
         Scanner sc=new Scanner(System.in);
-        int operation_option,option=1,value;
+        int operationoption,option=1,value;
 do{
     System.out.println("=========================================================================================");
     System.out.println("enter your option\n1.push an element\n2.pop an element\n3.top most element\n4.element present in stack");
-    operation_option=sc.nextInt();
+    operationoption=sc.nextInt();
     
-    switch(operation_option){
+    switch(operationoption){
         case 1:
         System.out.println("enter the value");
         value=sc.nextInt();
