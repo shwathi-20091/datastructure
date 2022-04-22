@@ -1,6 +1,6 @@
 package datastructures;
 import java.util.*;
-public class linkedlist {
+public class LinkedList {
 	 Node head; // head of list
 
 		/* Linked list Node*/
@@ -115,7 +115,7 @@ public class linkedlist {
 	{
 	   
 
-	    	linkedlist llist=new linkedlist();
+	    	LinkedList llist=new LinkedList();
 	Scanner sc=new Scanner(System.in);
 	int operationoption,option=1,value;
 	do{
