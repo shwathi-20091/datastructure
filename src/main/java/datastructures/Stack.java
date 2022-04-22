@@ -64,7 +64,9 @@ public class Stack {
 		Stack s = new Stack();
         
         Scanner sc=new Scanner(System.in);
-        int operationoption,option=1,value;
+        int operationoption;
+		int option=1;
+		int value;
 do{
     System.out.println("=========================================================================================");
     System.out.println("enter your option\n1.push an element\n2.pop an element\n3.top most element\n4.element present in stack");
