@@ -52,7 +52,7 @@ public class LinkedList {
 
 			/* 6. Change the next of last node */
 			last.next = newnode;
-			return;
+			
 		}
 
 		/* This function prints contents of linked list starting from
@@ -73,7 +73,8 @@ public class LinkedList {
 	    void deleteNode(int key)
 	    {
 	        // Store head node
-	        Node temp = head, prev = null;
+	        Node temp = head;
+			Node prev = null;
 	 
 	        // If head node itself holds the key to be deleted
 	        if (temp != null && temp.data == key) {
