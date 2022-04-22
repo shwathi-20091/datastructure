@@ -1,6 +1,6 @@
 package datastructures;
 import java.util.*;
-public class linked_list {
+public class linkedlist {
 	 Node head; // head of list
 
 		/* Linked list Node*/
@@ -12,38 +12,38 @@ public class linked_list {
 		}
 
 		/* Inserts a new Node at front of the list. */
-		public void insertfront(int new_data)
+		public void insertfront(int newdata)
 		{
 			/* 1 & 2: Allocate the Node &
 					Put in the data*/
-			Node new_node = new Node(new_data);
+			Node newnode = new Node(newdata);
 
 			/* 3. Make next of new Node as head */
-			new_node.next = head;
+			newnode.next = head;
 
 			/* 4. Move the head to point to new Node */
-			head = new_node;
+			head = newnode;
 		}
 	    /* Appends a new node at the end. This method is
 		defined inside LinkedList class shown above */
-		public void insertend(int new_data)
+		public void insertend(int newdata)
 		{
 			/* 1. Allocate the Node &
 			2. Put in the data
 			3. Set next as null */
-			Node new_node = new Node(new_data);
+			Node newnode = new Node(newdata);
 
 			/* 4. If the Linked List is empty, then make the
 				new node as head */
 			if (head == null)
 			{
-				head = new Node(new_data);
+				head = new Node(newdata);
 				return;
 			}
 
 			/* 4. This new node is going to be the last node, so
 				make next of it as null */
-			new_node.next = null;
+			newnode.next = null;
 
 			/* 5. Else traverse till the last node */
 			Node last = head;
@@ -51,7 +51,7 @@ public class linked_list {
 				last = last.next;
 
 			/* 6. Change the next of last node */
-			last.next = new_node;
+			last.next = newnode;
 			return;
 		}
 
@@ -115,15 +115,15 @@ public class linked_list {
 	{
 	   
 
-	    	linked_list llist=new linked_list();
+	    	linkedlist llist=new linkedlist();
 	Scanner sc=new Scanner(System.in);
-	int operation_option,option=1,value;
+	int operationoption,option=1,value;
 	do{
 	    System.out.println("=========================================================================================");
 	    System.out.println("enter your option\n1.addition at the front\n2.addition at back\n3.deletion \n4.count the number of nodes\n5.print the linked list");
-	    operation_option=sc.nextInt();
+	    operationoption=sc.nextInt();
 	    
-	    switch(operation_option){
+	    switch(operationoption){
 	        case 1:
 	        System.out.println("enter the value");
 	        value=sc.nextInt();
