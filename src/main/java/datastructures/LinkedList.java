@@ -118,25 +118,27 @@ public class LinkedList {
 
 	    	LinkedList llist=new LinkedList();
 	Scanner sc=new Scanner(System.in);
-	int operationoption,option=1,value;
+	int operationoption;
+	int option=1;
+	int value;
 	do{
 	    System.out.println("=========================================================================================");
 	    System.out.println("enter your option\n1.addition at the front\n2.addition at back\n3.deletion \n4.count the number of nodes\n5.print the linked list");
 	    operationoption=sc.nextInt();
-	    
+	    String message="enter the value";
 	    switch(operationoption){
 	        case 1:
-	        System.out.println("enter the value");
+	        System.out.println(message);
 	        value=sc.nextInt();
 	            llist.insertfront(value);
 	            break;
 	        case 2:
-	        System.out.println("enter the value");
+	        System.out.println(message);
 	    value=sc.nextInt();
 	            llist.insertend(value);
 	            break;
 	        case 3:
-	        System.out.println("enter the value");
+	        System.out.println(message);
 	    value=sc.nextInt();
 	            llist.deleteNode(value);
 	            break;
